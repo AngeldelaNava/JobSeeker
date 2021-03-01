@@ -1,7 +1,6 @@
 package jobseeker.db.jdbc;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;

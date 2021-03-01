@@ -3,8 +3,8 @@ package jobseeker.db.jdbc;
 import java.util.ArrayList;
 import java.util.List;
 
-import jobseeker.db.Job;
-import jobseeker.db.Person;
+import jobseeker.db.pojos.Job;
+import jobseeker.db.pojos.Person;
 
 public class DatabaseManager {
 

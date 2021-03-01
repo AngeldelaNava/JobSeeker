@@ -1,4 +1,4 @@
-package jobseeker.db;
+package jobseeker.db.pojos;
 
 import java.io.Serializable;
 import java.util.List;

@@ -63,6 +63,7 @@ public class JDBCManager implements DBManager {
 	public void disconnect() {
 		try {
 			c.close();
+			System.out.println("Database connection closed.");
 		} catch (SQLException e) {
 			System.out.println("There was a database exception.");
 			e.printStackTrace();

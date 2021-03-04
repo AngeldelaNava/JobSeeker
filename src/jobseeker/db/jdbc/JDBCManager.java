@@ -38,15 +38,16 @@ public class JDBCManager implements DBManager {
 		try {
 		Statement stmnt1 = c.createStatement();
 		String sql1 = "CREATE TABLE jobs "
-				+ "(id          INTEGER  PRYMARY KEY AUTOINCREMENT,"
-				+ " name         TEXT     NOT NULL, "
-				+ " description      TEXT    NOT NULL, "
-				+ " salary  REAL         NOT NULL, "
-				+ " startDate     DATE     NOT NULL, "
-				+ " endDate    DATE        NOT NULL)";
+				+ "(id INTEGER PRYMARY KEY AUTOINCREMENT, "
+				+ " name TEXT NOT NULL, "
+				+ " description TEXT NOT NULL, "
+				+ " salary REAL NOT NULL, "
+				+ " startDate DATE NOT NULL, "
+				+ " endDate DATE NOT NULL)";
 		stmnt1.executeUpdate(sql1);
 		} catch(SQLException e) {
-			
+			System.out.println("There was an exception creating the tables");
+			e.printStackTrace();
 		}
 //		private Integer id;
 //		private String name;

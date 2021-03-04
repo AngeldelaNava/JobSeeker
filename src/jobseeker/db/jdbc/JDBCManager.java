@@ -38,7 +38,7 @@ public class JDBCManager implements DBManager {
 		try {
 		Statement stmnt1 = c.createStatement();
 		String sql1 = "CREATE TABLE jobs "
-				+ "(id INTEGER PRYMARY KEY AUTOINCREMENT, "
+				+ "(id INTEGER PRYMARY KEY AUTO INCREMENT, "
 				+ " name TEXT NOT NULL, "
 				+ " description TEXT NOT NULL, "
 				+ " salary REAL NOT NULL, "

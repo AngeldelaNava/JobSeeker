@@ -19,7 +19,11 @@ public class Person implements Serializable {
 		this.jobs = jobs;
 	}
 	
-	
+	public Person(Integer id, String name) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
 	
 	public Integer getId() {
 		return id;
